@@ -1,11 +1,16 @@
 @use 'base/reset';
+@use 'base/typography';
 @use 'layout/header';
+@use 'layout/hero';
+@use 'layout/services';
+@use 'layout/footer';
 @use 'components/button';
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
   color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
 }
 
 .container {
@@ -14,11 +19,8 @@ body {
   padding: 0 15px;
 }
 
-.hero {
+.section-title {
   text-align: center;
-  padding: 50px 20px;
-
-  &__title { font-size: 2rem; margin-bottom: 15px; }
-  &__text { margin-bottom: 20px; }
-  &__image { max-width: 400px; border-radius: 10px; }
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
