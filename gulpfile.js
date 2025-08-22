@@ -35,7 +35,7 @@ function scripts() {
 }
 
 function images() {
-  return src("src/img/**/*.*", { encoding: false }) // важный фикс
+  return src("src/img/**/*.*", { encoding: false })
     .pipe(dest("dist/img"));
 }
 

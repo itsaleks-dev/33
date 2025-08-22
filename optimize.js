@@ -18,8 +18,8 @@ fs.readdirSync(srcDir).forEach(file => {
 
   if (/\.(jpe?g|png)$/i.test(file)) {
     sharp(inputPath)
-      .resize({ width: 1200, withoutEnlargement: true }) // ограничение ширины
-      .jpeg({ quality: 75 }) // сохраняем в JPEG c 75%
+      .resize({ width: 1200, withoutEnlargement: true })
+      .jpeg({ quality: 75 })
       .toFile(outputPath.replace(/\.(png|jpg|jpeg)$/i, ".jpg"))
       .then(() => {
         optimizedCount++;
@@ -43,5 +43,5 @@ fs.readdirSync(srcDir).forEach(file => {
 });
 
 process.on("exit", () => {
-  console.log(`\n📊 Итог: оптимизировано ${optimizedCount}, скопировано без изменений ${copiedCount}`);
+  console.log(`\n📊 Підсумок: оптимізовано ${optimizedCount}, скопійовано без змін ${copiedCount}`);
 });
