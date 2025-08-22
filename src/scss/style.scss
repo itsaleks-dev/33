@@ -1,0 +1,24 @@
+@use 'base/reset';
+@use 'layout/header';
+@use 'components/button';
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+
+  &__title { font-size: 2rem; margin-bottom: 15px; }
+  &__text { margin-bottom: 20px; }
+  &__image { max-width: 400px; border-radius: 10px; }
+}
