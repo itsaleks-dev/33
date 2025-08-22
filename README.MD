@@ -8,8 +8,7 @@ Gulp по умолчанию читал файлы как текст (UTF-8), а
 
     function images() {
     return src("src/img/**/*.*", { encoding: false })
-    .pipe(dest("dist/img"));
-}
+    .pipe(dest("dist/img")); }
 
 Теперь файлы не повреждаются.
 
